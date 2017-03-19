@@ -1,0 +1,14 @@
+{
+  "name": "he_app_list",
+  "version": "1.0.0",
+  "description": "an application which lists games played on different platforms",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kurianck.mail@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "mongodb": "^2.2.25"
+  }
+}
