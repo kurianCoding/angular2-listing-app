@@ -1,2 +1,2 @@
 docker rm -f capillary
-docker run -name=capillary $PWD../code/:/code -ti $1
+docker run --name=capillary --hostname=capillary -v $PWD/../code/:/code -ti $1

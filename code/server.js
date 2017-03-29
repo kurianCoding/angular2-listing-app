@@ -1,10 +1,8 @@
-var MongoClient = require('mongodb').MongoClient
-
-MongoClient.connect('mongodb://localhost:27017/animals', function (err, db) {
-	if (err) throw err
-	db.collection('mammals').find().toArray(function (err, result) {
-		if (err) throw err
-		console.log(result)
-	})
-
+var express=require('express')
+var capillary=express()
+capillary.get('/',function(req,res){
+	res.send('...')
+});
+capillary.listen('80',function(){
+	console.log('app running')
 })

@@ -1,1 +1,1 @@
-docker exec -it capillary
+docker exec -it capillary bash

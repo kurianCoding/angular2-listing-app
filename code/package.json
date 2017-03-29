@@ -9,6 +9,7 @@
   "author": "kurianck.mail@gmail.com",
   "license": "ISC",
   "devDependencies": {
+    "express": "^4.15.2",
     "mongodb": "^2.2.25"
   }
 }
