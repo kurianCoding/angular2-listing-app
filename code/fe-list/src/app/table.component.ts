@@ -13,7 +13,7 @@ export class Table implements OnInit{
   constructor(private movieListServiece:MovieListService) {}
 
   getList():void{
-    this.movieListServiece.getMovies().then(Movie=>this.item=Movie);
+    this.movieListServiece.getMovies().then(Movie=>{console.log(Movie); this.item=Movie});
   }
 
   ngOnInit():void{

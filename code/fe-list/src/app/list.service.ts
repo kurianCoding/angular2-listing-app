@@ -11,7 +11,7 @@ private listUrl = 'http://192.168.0.6:8080/get';
 getMovies(): Promise <Movie> {
     return this.http.get(this.listUrl)
              .toPromise()
-             .then(response => response.json().data as Movie)
+             .then(response =>response.json() as Movie)
              .catch(this.handleError);
 }
 
