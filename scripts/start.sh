@@ -1,1 +1,2 @@
-docker exec -it capillary bash
+sudo docker start capillary
+sudo docker exec -it capillary bash
