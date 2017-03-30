@@ -8,10 +8,10 @@ import { Movie } from './movie';
 export class MovieListService{
 constructor(private http: Http) { }
 private listUrl = 'http://192.168.0.6:8080/get';
-getMovies(): Promise <Movie> {
+getMovies(): Promise <Movie[]> {
     return this.http.get(this.listUrl)
              .toPromise()
-             .then(response =>response.json() as Movie)
+             .then(response =>response.json() as Movie[])
              .catch(this.handleError);
 }
 
