@@ -1,4 +1,13 @@
 import {Pipe} from '@angular/core';
 @Pipe({
-  name:'moviePipe';
+  name:'moviePipe'
 })
+
+export class MoviePipe{
+  transform(value,args?){
+    let [name]=args;
+    return value.filter(Movie=>{
+      return Movie.name = name;
+    });
+  }
+}
