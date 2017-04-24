@@ -1,13 +1,13 @@
 <table class="highlight">
   <thead>
     <tr>
-      <th> Title {{name}}</th>
-      <th> Genere {{genere}}</th>
-      <th> Price {{price}}</th>
+      <th > <a (click)="toName()">Title {{name}}</a></th>
+      <th > <a (click)="toGenere()">Genere {{genere}}</a></th>
+      <th > <a (click)="toPrice()">Price {{price}}</a></th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let movie of item">
+    <tr *ngFor="let movie of item | orderBy :order:reverse ">
       <td>{{movie?.name}}</td>
       <td>{{movie?.genere}}</td>
       <td>{{movie?.price | currency:'INR':true:'2.2-3'}}</td>
