@@ -10,7 +10,7 @@
     <tr *ngFor="let movie of item">
       <td>{{movie?.name}}</td>
       <td>{{movie?.genere}}</td>
-      <td>{{movie?.price | currency}}</td>
+      <td>{{movie?.price | currency:'INR':true:'2.2-3'}}</td>
     </tr>
   </tbody>
 </table>
