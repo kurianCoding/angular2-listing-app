@@ -1,6 +1,6 @@
 import {Pipe,PipeTransform} from '@angular/core';
 @Pipe({
-  name:'moviePipe'
+  name:'MoviePipe'
 })
 
 export class MoviePipe{

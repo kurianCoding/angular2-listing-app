@@ -3,11 +3,11 @@ import { OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 import { Movie } from './movie';
 import {MovieListService} from './list.service';
-import {MoviePipe} from './pipe.component';
+import { MoviePipe } from './pipe.component';
 @Component({
   selector: '<list-table>',
   templateUrl: './table.component.html',
-  providers:[ MovieListService ]
+  providers:[ MovieListService ],
 })
 export class Table implements OnInit{
   @Input('name')name :string;
