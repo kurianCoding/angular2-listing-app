@@ -7,7 +7,7 @@ import { Movie } from './movie';
 @Injectable()
 export class MovieListService{
 constructor(private http: Http) { }
-private listUrl = 'http://192.168.0.6:8080/get';
+private listUrl = 'http://192.168.0.8:8080/get';
 getMovies(): Promise <Movie[]> {
     return this.http.get(this.listUrl)
              .toPromise()
